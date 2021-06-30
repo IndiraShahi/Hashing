@@ -25,6 +25,8 @@ namespace BinarySearchTree
             tree.InsertData(67);
             tree.Display(tree.GetRoot());
             Console.WriteLine(" Total of elements in Binary search tree is: " + tree.GetSize());
+            bool result = tree.SearchTree(63, tree.GetRoot());
+            Console.WriteLine("Result is " + result);
         }
     }
 }
