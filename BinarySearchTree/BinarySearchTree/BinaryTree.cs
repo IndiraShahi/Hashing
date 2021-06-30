@@ -8,7 +8,8 @@ namespace BinarySearchTree
     {                                         
         Node<T> Root;
         Node<T> Current;
-        
+        private int Count;
+
         public void InsertData(T data)
         {
            
@@ -67,6 +68,10 @@ namespace BinarySearchTree
                 Display(node.rightNode);
             }
 
+        }
+        public int GetSize()
+        {
+            return Count;
         }
     }
 }
